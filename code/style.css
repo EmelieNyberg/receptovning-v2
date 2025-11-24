@@ -1,0 +1,126 @@
+/* BASE */
+
+* {
+	margin: 0;
+}
+
+html {
+	font-family: "Open Sans", sans-serif;
+	background-color: rgba(161, 0, 0, 0.3);
+}
+
+body {
+	padding-bottom: 64px;
+}
+
+/* GLOBAL ELEMENTS */
+
+h1 {
+	font-family: "Caveat", cursive;
+	font-size: 50px;
+	color: rgba(252, 252, 252, 1);
+	text-align: center;
+	margin: 24px;
+}
+
+h2 {
+	color: rgba(161, 0, 0, 1);
+	font-size: 28px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+ul,
+ol {
+	padding-left: 24px;
+	/* motsvarar 32px för font size 16px, båda går att skriva */
+	line-height: 2;
+}
+
+/* LAYOUT */
+
+main {
+	background-color: rgba(252, 252, 252, 1);
+	margin: auto;
+	max-width: 1280px;
+}
+
+.recipe-container {
+	padding: 48px 48px 64px 48px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+/* 4. COMPONENTS */
+
+/* Hero-bild */
+.main-image {
+	/* för att hela tiden hålla sig i samma bredd som sin container/föräder. ex krymper när föräldern krymper */
+	width: 100%;
+	/* Bilden får aldrig bli bredare än 1280px, även om fönstret är större.
+	På stora skärmar = den stannar på 1280px.
+	På små skärmar = den följer width: 100% och blir mindre. */
+	max-width: 1280px;
+	/* Bildens höjd låses till exakt 500px, oavsett originalbildens proportioner. */
+	height: 500px;
+	display: block;
+	/* Centrerar bilden horisontellt när den är smalare än sin förälder.
+	0 = ingen marginal uppe/nere,
+	auto på vänster/höger = centrera. */
+	margin: 0 auto;
+	/* fyller hela 500px höga ytan utan att ändra proportionerna */
+	object-fit: cover;
+}
+
+/* Receptets header */
+.recipe-header {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.recipe-subtitel {
+	padding: 16px;
+	background-color: rgba(235, 235, 235, 1);
+}
+
+/* Serveringsförslag */
+.serving-images {
+	display: flex;
+	gap: 24px;
+}
+
+.serving-image {
+	width: 100%;
+	min-width: 300px;
+	height: 467px;
+	display: block;
+	margin: 0 auto;
+	/* beskär bilden snyggt då proportionerna inte matchar */
+	object-fit: cover;
+}
+
+/* MEDIA QUERIES */
+
+/* gör brytpunkten när bilderna inte får plats längre */
+@media (max-width: 715px) {
+	.recipe-container {
+		padding: 48px 16px 64px 16px;
+	}
+
+	.serving-images {
+		/* stapla bilderna */
+		flex-direction: column;
+	}
+}
