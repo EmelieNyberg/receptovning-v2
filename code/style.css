@@ -16,20 +16,12 @@ body {
 /* GLOBAL ELEMENTS */
 
 h1 {
-	font-family: "Caveat", cursive;
-	font-size: 50px;
-	color: rgba(252, 252, 252, 1);
-	text-align: center;
-	margin: 24px;
-}
-
-h2 {
 	color: rgba(161, 0, 0, 1);
 	font-size: 28px;
 	font-weight: 700;
 }
 
-h3 {
+h2 {
 	font-size: 24px;
 	font-weight: 700;
 }
@@ -99,6 +91,12 @@ section {
 .serving-images {
 	display: flex;
 	gap: 24px;
+}
+
+.serving-images figure {
+	/* tar bort default styling på figure */
+	margin: 0;
+	flex: 1;
 }
 
 .serving-image {

@@ -22,30 +22,27 @@
 </head>
 
 <body>
-	<!-- Global sidhuvud med varumärke -->
-	<header>
-		<h1>Receptakuten.se</h1>
-	</header>
-
 	<!-- Huvudinnehåll för sidan -->
 	<main>
-		<!-- Innehåll ett recept -->
+		<!-- Innehåller ett recept -->
 		<article>
 			<!-- Hero-bild för receptet -->
-			<img class="main-image" src="assets/pannkakor1.jpg" alt="Närbild på pannkakor med grädde och hallon">
+			<!-- Gjorde ej om till <figure> då jag tycker bilden mest är för dekoration -->
+			<!-- Valde en tom alt för att det ska vara dekoration enbart -->
+			<img class="main-image" src="assets/pannkakor1.jpg" alt="">
 
 			<!-- Wrapper för allt innehåll tillhörande receptet -->
 			<div class="recipe-container">
 				<!-- Receptets rubrik och inledning -->
 				<header class="recipe-header">
-					<h2>Enkelt recept på pannkakor</h2>
+					<h1>Enkelt recept på pannkakor</h1>
 
 					<p class="recipe-subtitel">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p>
 				</header>
 
 				<!-- Sektion ingredienslista -->
-				<section>
-					<h3>Ingredienser</h3>
+				<section aria-labelledby="ingredients-heading">
+					<h2 id="ingredients-heading">Ingredienser</h2>
 
 					<p>För 4 portioner</p>
 
@@ -60,8 +57,8 @@
 				</section>
 
 				<!-- Sektion steg-för-steg instruktioner -->
-				<section>
-					<h3>Så här gör du</h3>
+				<section aria-labelledby="instructions-heading">
+					<h2 id="instructions-heading">Så här gör du</h2>
 
 					<ol>
 						<li>Blanda mjöl och salt i en bunke.</li>
@@ -74,13 +71,19 @@
 				</section>
 
 				<!-- Sektion visuella serveringsförslag -->
-				<section>
-					<h3>Serveringsförslag</h3>
+				<section aria-labelledby="servingoptions-heading">
+					<h2 id="servingoptions-heading">Serveringsförslag</h2>
 
 					<div class="serving-images">
-						<img class="serving-image" src="assets/pannkakor2.jpg" alt="Närbild på pannkakor utan topping">
+						<!-- Eftersom serveringsförslagen endast är visuella kände jag att det var viktigt att använda figure så att även blinda kunde ta del av serveringsförslagen -->
+						<figure>
+							<img class="serving-image" src="assets/pannkakor2.jpg" alt="Närbild på pannkakor utan topping">
+						</figure>
 
-						<img class="serving-image" src="assets/pannkakor3.jpg" alt="Bild på flera pannkakor som är vikta">
+						<figure>
+							<img class="serving-image" src="assets/pannkakor3.jpg"
+								alt="Bild på flera pannkakor som är vikta med apelsiner och honung på toppen">
+						</figure>
 					</div>
 				</section>
 			</div>
