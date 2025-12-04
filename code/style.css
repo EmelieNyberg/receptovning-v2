@@ -111,16 +111,14 @@ section {
 	background-color: var(--bg-color-recipe-subtitle);
 }
 
-/* Serveringsförslag */
 .serving-images {
 	display: flex;
 	gap: var(--gap-lg);
-}
 
-.serving-images figure {
-	/* tar bort default styling på figure */
-	margin: 0;
-	flex: 1;
+	figure {
+		margin: 0;
+		flex: 1;
+	}
 }
 
 .serving-image {
