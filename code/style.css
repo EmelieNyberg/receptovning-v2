@@ -80,6 +80,57 @@ section {
 
 /* 4. COMPONENTS */
 
+.navbar {
+	max-width: 1280px;
+	margin: auto;
+	padding: 0.5rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-family: var(--font-secondary);
+	text-decoration: none;
+	color: var(--text-color-logo);
+	font-size: var(--font-size-logo);
+	font-weight: 700;
+
+	&:hover {
+		color: color-mix(in srgb, var(--text-color-logo) 70%, white);
+	}
+}
+
+.nav-links {
+	display: flex;
+	gap: var(--gap-xlg);
+	list-style: none;
+
+	a {
+		text-decoration: none;
+		color: var(--text-color-primary);
+		font-weight: 700;
+
+		&:hover {
+			color: color-mix(in srgb, var(--text-color-primary) 70%, white);
+		}
+	}
+}
+
+.login-btn {
+	border: none;
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+	background-color: var(--bg-color-btn);
+	color: var(--text-color-primary);
+	font-weight: 700;
+	cursor: pointer;
+
+	&:hover {
+		color: color-mix(in srgb, var(--text-color-primary) 70%, white);
+	}
+}
+
 /* Hero-bild */
 .main-image {
 	/* för att hela tiden hålla sig i samma bredd som sin container/föräder. ex krymper när föräldern krymper */
