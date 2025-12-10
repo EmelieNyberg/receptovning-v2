@@ -1,0 +1,122 @@
+<!doctype html>
+
+<!-- talar om för webbläsare och hjälpmedel att innehållet på sidan är på svenska -->
+<html lang="sv">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Sidtitel som visas i fliken -->
+	<title>Receptövning</title>
+
+	<!-- Open sans och Caveat font från google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+
+	<!-- Länk till extern CSS-fil -->
+	<link rel="stylesheet" href="./global-styles.css" />
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<!-- Huvudinnehåll för sidan -->
+
+	<header class="site-header">
+		<nav class="navbar">
+			<a class="logo" href="/">Receptakuten</a>
+
+			<ul class="nav-links">
+				<li><a href="#alla-recept">Alla recept</a></li>
+				<li><a href="#om-oss">Om oss</a></li>
+				<li><a href="#kontakt">Kontakt</a></li>
+			</ul>
+
+			<button class="login-btn">Logga in</button>
+		</nav>
+	</header>
+
+	<main>
+
+		<section class="recipes-overview" aria-labelledby="recipes-heading">
+			<h1 id="recipes-heading">Hitta ditt nya favoritrecept!</h1>
+
+			<div class="recipe-grid">
+				<article class="recipe-card">
+					<a href="klassiska-pannkakor.html" class="recipe-link">
+						<figure>
+							<img src="assets/frasig-pannkaka.jpg"
+								alt="En tallrik med klassiska tunna pannkakor toppade med grädde och bär">
+						</figure>
+						<h2>Klassiska pannkakor</h2>
+
+						<p>Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p>
+					</a>
+				</article>
+
+				<article class="recipe-card">
+					<a href="amerikanska-pannkakor.html" class="recipe-link">
+						<figure>
+							<img src="assets/amerikanska_pannkakor.jpg"
+								alt="Staplade amerikanska pannkakor med blåbär, jordgubbar och lönnsirap">
+						</figure>
+						<h2>Amerikanska pannkakor</h2>
+
+						<p>Amerikanska pannkakor, som är lite mindre och tjockare, med bär och lönnsirap.</p>
+					</a>
+				</article>
+
+				<article class="recipe-card">
+					<a href="pannkakstarta.html" class="recipe-link">
+						<figure>
+							<img src="assets/japanska-pannkakor.jpg" alt="Pannkakstårta i skivor med bär och florsocker på toppen">
+						</figure>
+						<h2>Japanska pannkakor</h2>
+
+						<p>Gör en hel tårta av pannkakor! Perfekt till lyxfrukost eller tårtbuffé.</p>
+					</a>
+				</article>
+
+				<article class="recipe-card">
+					<a href="pannkakstarta.html" class="recipe-link">
+						<figure>
+							<img src="assets/pannkakor_surdeg.jpg" alt="Pannkakstårta i skivor med bär och florsocker på toppen">
+						</figure>
+						<h2>Pannkakstårta</h2>
+
+						<p>Gör en hel tårta av pannkakor! Perfekt till lyxfrukost eller tårtbuffé.</p>
+					</a>
+				</article>
+
+				<article class="recipe-card">
+					<a href="pannkakstarta.html" class="recipe-link">
+						<figure>
+							<img src="assets/pannkakor_med_bar.jpg" alt="Pannkakstårta i skivor med bär och florsocker på toppen">
+						</figure>
+						<h2>Ugnspannkaka</h2>
+
+						<p>Gör en hel tårta av pannkakor! Perfekt till lyxfrukost eller tårtbuffé.</p>
+					</a>
+				</article>
+
+				<article class="recipe-card">
+					<a href="pannkakstarta.html" class="recipe-link">
+						<figure>
+							<img src="assets/rullade-pannkakor.jpg" alt="Pannkakstårta i skivor med bär och florsocker på toppen">
+						</figure>
+						<h2>Pannkaksrullar</h2>
+
+						<p>Gör en hel tårta av pannkakor! Perfekt till lyxfrukost eller tårtbuffé.</p>
+					</a>
+				</article>
+
+			</div>
+		</section>
+
+	</main>
+</body>
+
+</html>
