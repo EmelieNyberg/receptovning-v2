@@ -23,14 +23,19 @@
 </head>
 
 <body>
+
+	<!-- Skip link till  -->
+	<a class="skiplink" href="#recipe-container">Hoppa till Huvudinnehållet
+	</a>
+
 	<!-- Huvudinnehåll för sidan -->
 
 	<header class="site-header">
 		<nav class="navbar">
-			<a class="logo" href="/">Receptakuten</a>
+			<a class="logo" href="all-recipes.html">Receptakuten</a>
 
 			<ul class="nav-links">
-				<li><a href="#alla-recept">Alla recept</a></li>
+				<li><a href="all-recipes.html">Alla recept</a></li>
 				<li><a href="#om-oss">Om oss</a></li>
 				<li><a href="#kontakt">Kontakt</a></li>
 			</ul>
@@ -48,12 +53,13 @@
 			<img class="main-image" src="assets/pannkakor1.jpg" alt="">
 
 			<!-- Wrapper för allt innehåll tillhörande receptet -->
-			<div class="recipe-container">
+			<div class="recipe-container" id="recipe-container">
 				<!-- Receptets rubrik och inledning -->
 				<header class="recipe-header">
 					<h1>Enkelt recept på pannkakor</h1>
 
-					<p class="recipe-subtitel">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</p>
+					<p class="recipe-subtitel">Gör traditionella tunna pannkakor med detta enkla och goda
+						pannkaksrecept.</p>
 				</header>
 
 				<!-- Sektion ingredienslista -->
@@ -93,7 +99,8 @@
 					<div class="serving-images">
 						<!-- Eftersom serveringsförslagen endast är visuella kände jag att det var viktigt att använda figure så att även blinda kunde ta del av serveringsförslagen -->
 						<figure>
-							<img class="serving-image" src="assets/pannkakor2.jpg" alt="Närbild på pannkakor utan topping">
+							<img class="serving-image" src="assets/pannkakor2.jpg"
+								alt="Närbild på pannkakor utan topping">
 						</figure>
 
 						<figure>

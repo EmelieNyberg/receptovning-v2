@@ -80,13 +80,34 @@ section {
 
 /* 4. COMPONENTS */
 
+a.skiplink {
+	display: inline-block;
+	color: #555;
+	background: #fff;
+	padding: .5em;
+	position: absolute;
+	left: -99999rem;
+	/* osynlig */
+	z-index: 100;
+
+	&:focus {
+		left: 0;
+		/* synlig när användaren tabbats dit */
+	}
+}
+
 .navbar {
+	background-color: var(--bg-color-secondary);
 	max-width: 1280px;
 	margin: auto;
-	padding: 0.5rem 0;
+	padding: 0.5rem 48px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	a {
+		display: block;
+	}
 }
 
 .logo {
@@ -131,6 +152,30 @@ section {
 	}
 }
 
+.hero {
+	position: relative;
+	/* gör att absolut positionering utgår från hero-boxen */
+}
+
+.hero-image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.hero-decoration {
+	position: absolute;
+	color: white;
+	padding: 48px;
+	font-size: 4rem;
+	font-weight: 700;
+	/* text-align: center; */
+	pointer-events: none;
+	/* gör så att texten inte blockerar klick */
+	width: 50%;
+
+}
+
 /* Hero-bild */
 .main-image {
 	/* för att hela tiden hålla sig i samma bredd som sin container/föräder. ex krymper när föräldern krymper */
@@ -153,9 +198,16 @@ section {
 .recipe-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+	grid-auto-rows: 1fr;
+	/* alla blir lika långa */
 	gap: var(--gap-sm);
 	align-items: stretch;
-	padding: 10px;
+	padding: 48px;
+}
+
+.recipes-overview h1 {
+	padding-top: 48px;
+	text-align: center;
 }
 
 .recipe-card {
